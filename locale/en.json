@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Session Delete",
+    "description": "Adds a real \"Delete session\" command to the sidebar session menu, behind a confirmation dialog built from DSH's own components, and erases that session's log directory, projection cache and workspace links for good."
+  }
+}

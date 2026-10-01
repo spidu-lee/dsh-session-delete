@@ -1,0 +1,53 @@
+{
+  "name": "dsh-session-delete",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Adds a real \"Delete session\" row to the sidebar session \"...\" menu: after a confirmation prompt it removes the session's log directory from disk, cleans the projection cache, detaches it from every workspace and broadcasts the removal.",
+  "type": "module",
+  "main": "lib/index.js",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spidu-lee/dsh-session-delete.git"
+  },
+  "homepage": "https://github.com/spidu-lee/dsh-session-delete#readme",
+  "bugs": {
+    "url": "https://github.com/spidu-lee/dsh-session-delete/issues"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek",
+    "harness",
+    "dsh",
+    "cordis",
+    "session"
+  ],
+  "author": "spidu-lee",
+  "files": [
+    "lib",
+    "locale",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT"
+}

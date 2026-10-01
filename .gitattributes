@@ -1,0 +1,9 @@
+# Keep the published files LF-only: DSH loads lib/*.js and locale/*.json as-is,
+# and a mixed-EOL diff is noise on every later change.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.ico binary
